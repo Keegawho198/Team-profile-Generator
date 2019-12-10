@@ -1,4 +1,4 @@
-class employee {
+class Employee {
   constructor(name, id, title, email) {
     this.name = name;
     this.id = id;
@@ -19,7 +19,10 @@ class employee {
   }
 
   getRole(){
-    return employee;
+    return Employee;
   }
 
 }
+const employee1 = new Employee("Keegan");
+
+employee1.getName();
