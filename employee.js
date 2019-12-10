@@ -1,3 +1,11 @@
+const inquirer = require("inquirer");
+
+inquirer
+.prompt({
+    message: "Enter your name:",
+    name: "username"
+})
+
 class Employee {
   constructor(name, id, title, email) {
     this.name = name;
@@ -6,19 +14,19 @@ class Employee {
     this.email = email;
   }
 
-  getName(){
+  getName() {
     console.log(`Name: ${this.name}`);
   }
 
-  getId(){
+  getId() {
     console.log(`ID: ${this.id}`);
   }
 
-  getEmail(){
+  getEmail() {
     console.log(`Email: ${this.email}`);
   }
 
-  getRole(){
+  getRole() {
     return Employee;
   }
 
