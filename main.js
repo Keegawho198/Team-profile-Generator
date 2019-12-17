@@ -1,7 +1,8 @@
-const Employee = require("./lib/employee");
+const Main = require("./lib/Main");
 
-const employee = new Employee();
 
-employee.start();
+const test = new Main();
 
-//
+test.run();
+
+
